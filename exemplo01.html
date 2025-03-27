@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo01</title>
+    <script>
+        function processar(){
+            var num1 = parseInt(entrada1.value);
+            var num2 = parseInt(entrada2.value);
+            var soma = num1 + num2;
+            resp.innerHTML = soma;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="entrada1" placeholder="Informe um numero">
+    <input type="number" id="entrada2" placeholder="Informe um numero">
+    <button onclick="processar()">Ok</button>
+    <div id="resp"></div>
+</body>
+</html>

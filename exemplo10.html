@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo10</title>
+    <script>
+        function processar(){
+            var i = 0, vetor = [];
+            do {
+                vetor[i++] = prompt("Informe o nome");
+            } while (confirm("Deseja informar outro nome?"));
+            resp.innerHTML = "Nomes informados: <br/>"
+            vetor = vetor.map((nome,i)=>{return`${i}}) ${nome} <br/>`});
+            resp.innerHTML += vetor.join("");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="processar()">Ok</button>
+    <div id="resp"></div>
+</body>
+</html>
